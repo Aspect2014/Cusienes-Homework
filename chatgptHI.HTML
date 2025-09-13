@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ultra Complex Landing Page</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-blue-600">MegaLanding</a>
+            <nav class="hidden md:flex space-x-6 font-medium">
+                <a href="#home" class="hover:text-blue-600">Home</a>
+                <a href="#services" class="hover:text-blue-600">Services</a>
+                <a href="#portfolio" class="hover:text-blue-600">Portfolio</a>
+                <a href="#pricing" class="hover:text-blue-600">Pricing</a>
+                <a href="#blog" class="hover:text-blue-600">Blog</a>
+                <a href="#contact" class="hover:text-blue-600">Contact</a>
+            </nav>
+            <button class="md:hidden text-2xl focus:outline-none" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden flex-col px-6 pb-4 space-y-2 bg-white" id="mobile-menu">
+            <a href="#home" class="hover:text-blue-600">Home</a>
+            <a href="#services" class="hover:text-blue-600">Services</a>
+            <a href="#portfolio" class="hover:text-blue-600">Portfolio</a>
+            <a href="#pricing" class="hover:text-blue-600">Pricing</a>
+            <a href="#blog" class="hover:text-blue-600">Blog</a>
+            <a href="#contact" class="hover:text-blue-600">Contact</a>
+        </div>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section id="home"
+        class="h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 text-white relative">
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="relative text-center px-6" data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-6">Build the Future with MegaLanding</h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+                A super complex, fully responsive landing page with animations, interactivity, and everything you could
+                imagine — all in one HTML file.
+            </p>
+            <a href="#services"
+                class="px-8 py-4 bg-white text-blue-600 rounded-full font-semibold hover:bg-gray-200 transition">
+                Explore Services
+            </a>
+        </div>
+    </section>
+
+    <!-- ================= SERVICES SECTION ================= -->
+    <section id="services" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-12" data-aos="fade-up">Our Services</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition" data-aos="fade-right">
+                    <i class="fas fa-code text-blue-600 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+                    <p class="text-gray-600">We create stunning, scalable, and secure web applications tailored to your
+                        needs.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition" data-aos="fade-up">
+                    <i class="fas fa-paint-brush text-purple-600 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">UI/UX Design</h3>
+                    <p class="text-gray-600">Beautiful and intuitive user experiences with a focus on modern design
+                        principles.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition" data-aos="fade-left">
+                    <i class="fas fa-bullhorn text-green-600 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Digital Marketing</h3>
+                    <p class="text-gray-600">Grow your audience and boost conversions with data-driven marketing
+                        campaigns.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= PORTFOLIO SECTION ================= -->
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-12" data-aos="fade-up">Our Portfolio</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="relative group" data-aos="zoom-in">
+                    <img src="https://picsum.photos/600/400?random=11" alt="Project 1" class="rounded-2xl shadow-lg">
+                    <div
+                        class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition rounded-2xl">
+                        <p class="text-white font-semibold">Project 1</p>
+                    </div>
+                </div>
+                <div class="relative group" data-aos="zoom-in">
+                    <img src="https://picsum.photos/600/400?random=12" alt="Project 2" class="rounded-2xl shadow-lg">
+                    <div
+                        class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition rounded-2xl">
+                        <p class="text-white font-semibold">Project 2</p>
+                    </div>
+                </div>
+                <div class="relative group" data-aos="zoom-in">
+                    <img src="https://picsum.photos/600/400?random=13" alt="Project 3" class="rounded-2xl shadow-lg">
+                    <div
+                        class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition rounded-2xl">
+                        <p class="text-white font-semibold">Project 3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ================= TESTIMONIALS SECTION ================= -->
+    <section id="testimonials" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-12" data-aos="fade-up">What Our Clients Say</h2>
+            <div class="relative max-w-3xl mx-auto">
+                <div class="overflow-hidden rounded-2xl shadow-lg bg-white p-10" data-aos="fade-up" id="testimonial">
+                    <p class="text-gray-600 italic mb-6" id="testimonial-text">“This is the best service I’ve ever used. The
+                        team was professional and delivered amazing results.”</p>
+                    <div class="flex items-center justify-center space-x-4">
+                        <img src="https://i.pravatar.cc/100?img=5" class="w-16 h-16 rounded-full border-4 border-blue-600"
+                            id="testimonial-img">
+                        <div>
+                            <h4 class="font-semibold text-lg" id="testimonial-name">Jane Doe</h4>
+                            <p class="text-gray-500 text-sm" id="testimonial-role">CEO, Example Corp</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <div class="flex justify-center space-x-6 mt-6">
+                    <button onclick="prevTestimonial()"
+                        class="px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700"><i
+                            class="fas fa-arrow-left"></i></button>
+                    <button onclick="nextTestimonial()"
+                        class="px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700"><i
+                            class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ================= PRICING SECTION ================= -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-12" data-aos="fade-up">Pricing Plans</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Basic -->
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition" data-aos="fade-right">
+                    <h3 class="text-xl font-semibold mb-4">Basic</h3>
+                    <p class="text-4xl font-bold text-blue-600 mb-6">$19<span class="text-lg text-gray-600">/mo</span></p>
+                    <ul class="space-y-3 text-gray-600 mb-6">
+                        <li><i class="fas fa-check text-green-600 mr-2"></i> 5 Projects</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i> Basic Support</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i> Email Reports</li>
+                    </ul>
+                    <button
+                        class="px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition">Choose
+                        Plan</button>
+                </div>
+                <!-- Pro -->
+                <div class="bg-white p-8 rounded-2xl shadow-2xl border-2 border-blue-600 relative" data-aos="fade-up">
+                    <span class="absolute top-0 right-0 bg-blue-600 text-white text-xs px-3 py-1 rounded-bl-lg">Most
+                        Popular</span>
+                    <h3 class="text-xl font-semibold mb-4">Pro</h3>
+                    <p class="text-4xl font-bold text-blue-600 mb-6">$49<span class="text-lg text-gray-600">/mo</span></p>
+                    <ul class="space-y-3 text-gray-600 mb-6">
+                        <li><i class="fas fa-check text-green-600 mr-2"></i> Unlimited Projects</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i> Priority Support</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i> Analytics Dashboard</li>
+                    </ul>
+                    <button
+                        class="px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition">Choose
+                        Plan</button>
+                </div>
+                <!-- Enterprise -->
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition" data-aos="fade-left">
+                    <h3 class="text-xl font-semibold mb-4">Enterprise</h3>
+                    <p class="text-4xl font-bold text-blue-600 mb-6">$99<span class="text-lg text-gray-600">/mo</span></p>
+                    <ul class="space-y-3 text-gray-600 mb-6">
+                        <li><i class="fas fa-check text-green-600 mr-2"></i> Custom Solutions</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i> Dedicated Manager</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i> 24/7 Premium Support</li>
+                    </ul>
+                    <button
+                        class="px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition">Choose
+                        Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= BLOG SECTION ================= -->
+    <section id="blog" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-12" data-aos="fade-up">Latest Blog Posts</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <article class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition" data-aos="fade-right">
+                    <img src="https://picsum.photos/400/250?random=21" alt="Blog 1" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">How to Build Scalable Websites</h3>
+                    <p class="text-gray-600 mb-4">Discover tips and tricks for creating websites that can grow with your
+                        business needs.</p>
+                    <a href="#" class="text-blue-600 font-semibold hover:underline">Read More →</a>
+                </article>
+                <article class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition" data-aos="fade-up">
+                    <img src="https://picsum.photos/400/250?random=22" alt="Blog 2" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Designing for User Experience</h3>
+                    <p class="text-gray-600 mb-4">Learn the latest design strategies to create intuitive and user-friendly
+                        interfaces.</p>
+                    <a href="#" class="text-blue-600 font-semibold hover:underline">Read More →</a>
+                </article>
+                <article class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition" data-aos="fade-left">
+                    <img src="https://picsum.photos/400/250?random=23" alt="Blog 3" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">The Future of Digital Marketing</h3>
+                    <p class="text-gray-600 mb-4">Explore how AI and automation are transforming the world of digital
+                        marketing.</p>
+                    <a href="#" class="text-blue-600 font-semibold hover:underline">Read More →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ================= NEWSLETTER SECTION ================= -->
+    <section id="newsletter" class="py-20 bg-blue-600 text-white">
+        <div class="container mx-auto px-6 text-center" data-aos="zoom-in">
+            <h2 class="text-3xl font-bold mb-6">Subscribe to Our Newsletter</h2>
+            <p class="mb-8">Get the latest updates, tutorials, and insights straight to your inbox.</p>
+            <form class="max-w-xl mx-auto flex flex-col sm:flex-row gap-4">
+                <input type="email" placeholder="Enter your email"
+                    class="flex-1 px-6 py-3 rounded-lg text-gray-800 focus:outline-none" required>
+                <button type="submit"
+                    class="px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-200 transition">Subscribe</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- ================= CONTACT SECTION ================= -->
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up">Get in Touch</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div data-aos="fade-right">
+                    <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+                    <p class="text-gray-600 mb-4">We’d love to hear from you! Reach out with any questions or project ideas.
+                    </p>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt text-blue-600 mr-2"></i> 123 Innovation Street, Tech
+                        City</p>
+                    <p class="mb-2"><i class="fas fa-phone text-blue-600 mr-2"></i> (123) 456-7890</p>
+                    <p class="mb-2"><i class="fas fa-envelope text-blue-600 mr-2"></i> hello@megalanding.com</p>
+                </div>
+                <form class="bg-white p-8 rounded-2xl shadow-lg" data-aos="fade-left">
+                    <div class="grid grid-cols-2 gap-4 mb-4">
+                        <input type="text" placeholder="First Name"
+                            class="px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                            required>
+                        <input type="text" placeholder="Last Name"
+                            class="px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                            required>
+                    </div>
+                    <input type="email" placeholder="Email"
+                        class="w-full px-4 py-3 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                        required>
+                    <textarea rows="5" placeholder="Message"
+                        class="w-full px-4 py-3 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                        required></textarea>
+                    <button type="submit"
+                        class="w-full px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">Send
+                        Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-6 grid md:grid-cols-4 gap-10">
+            <div>
+                <h3 class="text-white text-xl font-semibold mb-4">MegaLanding</h3>
+                <p class="text-gray-400">Building the web of tomorrow, today. A fully responsive, animated landing page
+                    template.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="#home" class="hover:text-white">Home</a></li>
+                    <li><a href="#services" class="hover:text-white">Services</a></li>
+                    <li><a href="#portfolio" class="hover:text-white">Portfolio</a></li>
+                    <li><a href="#pricing" class="hover:text-white">Pricing</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Resources</h4>
+                <ul class="space-y-2">
+                    <li><a href="#blog" class="hover:text-white">Blog</a></li>
+                    <li><a href="#newsletter" class="hover:text-white">Newsletter</a></li>
+                    <li><a href="#contact" class="hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Follow Us</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-white"><i class="fab fa-facebook text-xl"></i></a>
+                    <a href="#" class="hover:text-white"><i class="fab fa-twitter text-xl"></i></a>
+                    <a href="#" class="hover:text-white"><i class="fab fa-linkedin text-xl"></i></a>
+                    <a href="#" class="hover:text-white"><i class="fab fa-instagram text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 mt-10">&copy; 2025 MegaLanding. All rights reserved.</div>
+    </footer>
+    
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Init animations
+        AOS.init();
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+
+        // Testimonials Carousel
+        const testimonials = [
+            {
+                text: "“This is the best service I’ve ever used. The team was professional and delivered amazing results.”",
+                name: "Jane Doe",
+                role: "CEO, Example Corp",
+                img: "https://i.pravatar.cc/100?img=5"
+            },
+            {
+                text: "“Incredible attention to detail and fantastic support. Highly recommend their services.”",
+                name: "John Smith",
+                role: "Founder, StartupX",
+                img: "https://i.pravatar.cc/100?img=6"
+            },
+            {
+                text: "“They transformed our online presence and boosted our business beyond expectations.”",
+                name: "Emily Johnson",
+                role: "Marketing Head, BizGrow",
+                img: "https://i.pravatar.cc/100?img=7"
+            }
+        ];
+        let currentTestimonial = 0;
+
+        function showTestimonial(index) {
+            const t = testimonials[index];
+            document.getElementById("testimonial-text").innerText = t.text;
+            document.getElementById("testimonial-name").innerText = t.name;
+            document.getElementById("testimonial-role").innerText = t.role;
+            document.getElementById("testimonial-img").src = t.img;
+        }
+
+        function prevTestimonial() {
+            currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+            showTestimonial(currentTestimonial);
+        }
+
+        function nextTestimonial() {
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            showTestimonial(currentTestimonial);
+        }
+    </script>
+    </body>
+    
+    </html>
